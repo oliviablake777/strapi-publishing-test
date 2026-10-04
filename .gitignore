@@ -1,0 +1,21 @@
+node_modules/
+
+# Local and deployed secrets
+.env
+.env.*
+!.env.example
+
+# Strapi build and runtime data
+.cache/
+build/
+.strapi/
+.strapi-updater.json
+.tmp/
+public/uploads/
+
+# Local database files and logs
+*.db
+*.db-*
+*.log
+
+.DS_Store

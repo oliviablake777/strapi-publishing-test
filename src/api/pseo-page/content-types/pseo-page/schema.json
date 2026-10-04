@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pseo_pages",
+  "info": {
+    "singularName": "pseo-page",
+    "pluralName": "pseo-pages",
+    "displayName": "PSEO Page",
+    "description": "Minimal local content type for PSEO Strapi publishing tests"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "html": {
+      "type": "text"
+    },
+    "imageUrls": {
+      "type": "json"
+    }
+  }
+}
